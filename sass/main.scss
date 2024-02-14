@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Bebas+Neue&display=swap");
+
+/* Pages */
+@import "accueil.scss";
+@import "à propos.scss";
+@import "galeries.scss";
+/* Modules */
+@import "modules/navbar.scss";
+@import "modules/formulaire.scss";
+@import "modules/cta.scss";
+@import "modules/footer.scss";
+
+* {
+  margin: 0;
+}
+
+/* Design System */
+:root {
+  /* Colors */
+  --appBar-highlight: #006310;
+  --background-color: #4f7a56;
+  --black: #000000;
+  --white: #ffffff;
+
+  /* Text configuration */
+  --header-font: "Bebas Neue";
+  --header-font-weight: 400;
+  --header-font-size: 3rem;
+  /* Media Queries*/
+  @media screen and (max-width: 996px) {
+    --header-font-size: 2rem;
+  }
+
+  --body-font: "Barlow";
+  --body-font-weight: 400;
+  --body-font-size: 1.5rem;
+
+  --body-highlight-font: "Barlow";
+  --body-highlight-font-weight: 600;
+  --body-highlight-font-size: 1.5rem;
+
+  @media screen and (max-width: 996px) {
+    --body-highlight-font-size: 1.25rem;
+  }
+
+  --h1: "Bebas Neue";
+  --h1-font-size: 4.5rem;
+
+  --h2: "Bebas Neue";
+  --h2-font-size: 3.5rem;
+
+  --cta-font-weight: 700;
+  --cta-font-size: 1.5rem;
+
+  @media screen and (max-width: 996px) {
+    --cta-font-size: 1.25rem;
+  }
+
+  --footer-font-weight: 400;
+  --footer-font-size: 1.1rem;
+
+  @media screen and (max-width: 996px) {
+    --footer-font-size: 0.8rem;
+  }
+}
+
+body,
+h1,
+h2,
+h3 {
+  font-style: normal;
+  line-height: normal;
+  color: var(--white);
+}
+
+body {
+  background-color: var(--background-color);
+  max-width: 1440px;
+  font-family: var(--body-font);
+  font-weight: var(--body-font-weight);
+  font-size: var(--body-font-size);
+
+  @media screen and (max-width: 996px) {
+    --body-font-size: 1rem;
+  }
+}
+
+h1 {
+  font-family: var(--h1);
+  font-weight: var(--body-font-weight);
+  font-size: var(--h1-font-size);
+
+  @media screen and (max-width: 996px) {
+    --h1-font-size: 3rem;
+  }
+}
+
+h2 {
+  font-family: var(--h2);
+  font-weight: var(--body-font-weight);
+  font-size: var(--h2-font-size);
+  @media screen and (max-width: 996px) {
+    --h2-font-size: 2rem;
+  }
+}
+
+h3 {
+  font-family: var(--body-font);
+  font-weight: var(--body-highlight-font-weight);
+  font-size: var(--body-font-size);
+}

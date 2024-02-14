@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*section 1 - Titre présentation staff*/
+.bas {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  /* Media Queries*/
+}
+@media screen and (max-width: 996px) {
+  .bas {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+/*Ensemble de la section présentation staff*/
+.marge {
+  margin: 120px;
+}
+@media screen and (max-width: 996px) {
+  .marge {
+    margin: 30px;
+  }
+}
+
+/*bloc (photo, nom et paragraphe) de présentation par personne*/
+.direction {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  margin-bottom: 100px;
+  /*Photo*/
+  /*Nom et Paragraphe*/
+}
+@media screen and (max-width: 996px) {
+  .direction {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+}
+.direction .format {
+  width: 518px;
+  height: 345px;
+}
+@media screen and (max-width: 996px) {
+  .direction .format {
+    width: 319px;
+    height: 242px;
+    object-fit: cover;
+  }
+}
+.direction .interieur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*Section 2 - Formulaire de contact*/
+.fond__3 {
+  /*Fond décoratif*/
+  background-image: url(../Assets/accueil/fond\ 2.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1127px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 996px) {
+  .fond__3 {
+    margin-bottom: 0;
+  }
+}
+
+/*Section 3 - Titre Tableau*/
+.middle {
+  text-align: center;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 996px) {
+  .middle {
+    display: none;
+  }
+}
+
+/*Section 3 - Tableau Planning Randos*/
+table {
+  border-collapse: collapse;
+  margin: auto;
+  color: var(--white);
+  text-align: center;
+  border-collapse: collapse;
+  width: 1100px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 996px) {
+  table {
+    display: none;
+  }
+}
+
+tr,
+th,
+td {
+  border: 2px solid white;
+}
+
+th {
+  padding: 15px;
+}
+
+td {
+  padding: 50px;
+}
+
+/*ici, ordre spécifique pour la présentation d'INES, pour harmoniser l'ensemble de la présentation du staff en responsive*/
+@media screen and (max-width: 996px) {
+  .order__1 {
+    order: 1;
+  }
+  .order__2 {
+    order: 2;
+  }
+}/*# sourceMappingURL=à propos.css.map */

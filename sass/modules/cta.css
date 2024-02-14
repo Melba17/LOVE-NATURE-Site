@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*style général cta*/
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: var(--body-font);
+  font-size: var(--cta-font-size);
+  font-style: normal;
+  font-weight: var(--cta-font-weight);
+  text-decoration: none;
+}
+.btn:hover, .btn.active {
+  background: linear-gradient(#006310, #4f7a56);
+}
+
+/* cta contact- Page Accueil*/
+.cta {
+  width: 150px;
+  background: var(--black);
+  color: var(--white);
+  /*Media Queries*/
+}
+@media screen and (max-width: 996px) {
+  .cta {
+    width: 90px;
+  }
+}
+
+/* cta formulaire - Page À Propos*/
+.cta__bis {
+  width: 239px;
+  margin: auto;
+  background: var(--white);
+  color: var(--black);
+}
+.cta__bis:hover, .cta__bis.active {
+  color: var(--white);
+}
+@media screen and (max-width: 996px) {
+  .cta__bis {
+    width: 150px;
+  }
+}/*# sourceMappingURL=cta.css.map */
