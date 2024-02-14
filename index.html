@@ -3,9 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="sass/main.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="Assets/icons/Logo Love Nature.svg"
+    />
+    <title>Accueil - Love Nature</title>
   </head>
   <body>
-    <h1><strong>Bonjour le monde !</strong></h1>
-  </body>
-</html>
+    <div>
+      <header>
+        <nav>
+        <div class="logo"><a href="accueil.html">
+          <img
+            src="Assets/icons/Logo Love Nature.svg"
+            alt="Logo Love Nature"
+            title="Logo Love Nature"
+        /></a></div>
+        <div class="menu">
+        <a href="accueil.html" class="menu__items menu__items--underline">Accueil</a>
+        <a href="à propos.html" class="menu__items">À Propos</a>
+        <a href="galeries.html" class="menu__items">Galeries</a></div>
+      </nav>
+    </header>
+    <main>
+      <!--Section 1 - Présentation de l'Asso-->
+        <section class="fond">
+            <div class="bloc"><h1>ASSOCIATION DE PROTECTION ENVIRONNEMENTALE ET ANIMALE</h1>
+            <p>Nous agissons concrètement pour protéger les écosystèmes et la biodiversité en luttant contre le changement climatique et les différentes menaces pesant sur le vivant.</p></div>
+        </section>
+      <!--Section 2-->  
+      <section>
+         <!--Comportement des 2 colonnes-->
+        <div class="flex">
+         <!--Déco colonne de gauche--> 
+           <div class="hero">
+              <img src="Assets/accueil/Photo 1.jpg" alt="soleil à travers la forêt" class="one">
+              <h2 class="titre">PLONGEZ EN PLEINE NATURE</h2>
+              <img src="Assets/accueil/Photo 2.jpg" alt="champignon" class="two">
+           </div>
+           <!--Différents thèmes abordés proposés par l'asso - colonne de droite-->
+           <div class="hero__2">
+              <a href="galeries.html#ancre__3"><img
+                 src="Assets/icons/Logo patte.png"
+                 alt="Logo patte - cliquez ici"
+                 title="cliquez ici" class="espace"/></a>
+              <h3 class="espace__2">LES ANIMAUX</h3>
+              <p class="espace__3 contenu">Par opposition à végétal, êtres vivants organisés, généralement capables de se déplacer et n'ayant ni chlorophylle ni paroi cellulaire cellulosique.</p>
+              
+              <a href="galeries.html#ancre__4"><img
+                 src="Assets/icons/Logo feuille.png"
+                 alt="Logo feuille - cliquez ici"
+                 title="cliquez ici" class="espace"/></a>
+              <h3 class="espace__2">LES ARBRES</h3>
+              <p class="espace__3 contenu">Les arbres sont des plantes pérennes qui vivent plusieurs années, plusieurs décennies, voire plusieurs siècles, et, dans de rares cas, plusieurs millénaires.
+                 Selon les estimations, la planète compte entre 60 000 et 100 000 espèces d'arbres.
+              </p>
+             
+              <div class="media">
+               <div class="milieu"><a href="à propos.html#ancre__2">
+               <img src="Assets/icons/Logo Rando.png"
+                 alt="Logo rando - cliquez ici"
+                 title="cliquez ici" class="espace"/></a>
+               </div>
+              <h3 class="espace__2 contenu">LES RANDOS</h3>
+              <p class="espace__3 contenu">Découvrez notre planning des randonnées que nous proposons régulièrement, aussi bien aux débutants, qu’aux marcheurs chevronnés.</p></div>
+               </div>
+            </div>
+     </section>
+     <!--Section 3 - Bandeau photos-->   
+     <section class="box">
+        <img src="Assets/accueil/grid 1.jpg" alt="photo goutte" class="width">
+        <img src="Assets/accueil/grid 2.jpg" alt="photo épis de blé" class="width">
+        <img src="Assets/accueil/grid 3.jpg" alt="photo coquelicot" class="width">
+        <img src="Assets/accueil/grid 4.jpg" alt="photo marmottes" class="width">
+     </section>
+     <!--Section 4 - Lien vers page À Propos/Contact-->
+     <section class="box2">
+      <!--Photo de gauche-->
+        <img src="Assets/accueil/Photo 3.jpg" alt="jeune femme souriante et coquelicots" class="dim"/>
+      <!--Partie centrale-->
+        <div class="team">
+           <h2>À propos de notre Équipe</h2>
+           <p>Faites connaissance avec notre équipe de choc ! De vrais passionnés mais également passionnants à écouter.</p>
+           <a href="à propos.html"><img src="Assets/icons/Logo flèche.png" alt="Logo flèche" title="cliquez ici" class="effet"/></a>
+        </div>
+      <!--Photos de droite-->
+        <div class="team2">
+           <img src="Assets/accueil/Photo 4.jpg" alt="Bois en forme de coeur">
+           <img src="Assets/accueil/Photo 5.jpg" alt="rivière sous les arbres">
+        </div>
+     </section>
+     <!--Section 5 - Contacts-->
+     <!--Fond décoratif-->
+     <section class="fond__2">
+      <!--Fond blanc superposé-->
+        <div class="white">
+         <!--Texte Contacts-->
+           <h2 class="black">REJOIGNEZ-NOUS</h2>
+           <h3 class="black top">LOVE NATURE</h3>
+           <p class="black">143 Rue des Primevères</p>
+           <p class="black">83230 Bormes-les-Mimosas</p>
+           <p class="black bottom">+331 25 36 98 45</p>
+           <a href="à propos.html#ancre" class="btn cta">CONTACT</a>
+        </div>
+     </section>
+     </main>
+     <footer>
+        <div class="footer">
+           <a href="accueil.html" class="footer__mots">©Love Nature</a>
+           <a href="accueil.html" class="footer__mots">Politique de Confidentialité</a>
+        </div>
+        <div class="footer__logos">
+           <a href="https://fr-fr.facebook.com/" target="_blank" class="logos"><img src="Assets/icons/Facebook.svg" alt="logo facebook"></a>
+           <a href="https://twitter.com/" target="_blank" class="logos"><img src="Assets/icons/Twitter.svg" alt="logo twitter"></a>
+           <a href="https://www.instagram.com/" target="_blank" class="logos"><img src="Assets/icons/Instagram.svg" alt="logo instagram"></a>
+        </div>
+     </footer>
+     </body>
+     </html>
