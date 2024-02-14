@@ -184,7 +184,8 @@
   gap: 80px;
 }
 
-/*Section 5 - Contact*/
+/*Section 5 - Contacts*/
+/*Fond Décoratif*/
 .deco_bis {
   background-image: url(../photos/accueil/deco_1.jpg);
   background-repeat: no-repeat;
@@ -195,6 +196,7 @@
   align-items: center;
 }
 
+/*Fond Blanc superposé*/
 .white {
   display: flex;
   flex-direction: column;
@@ -204,7 +206,13 @@
   width: 756px;
   height: 424px;
 }
+@media screen and (max-width: 996px) {
+  .white {
+    width: 300px;
+  }
+}
 
+/*Texte Contacts*/
 .black {
   color: var(--black);
   line-height: 2rem;
@@ -228,8 +236,5 @@
   img[src="photos/accueil/Photo 4.jpg"],
   img[src="photos/accueil/Photo 5.jpg"] {
     display: none;
-  }
-  .white {
-    width: 300px;
   }
 }/*# sourceMappingURL=accueil.css.map */
