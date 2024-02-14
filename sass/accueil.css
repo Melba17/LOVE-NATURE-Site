@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*Section 1 - Présentation l'Asso*/
-.fond {
-  background-image: url(../Assets/accueil/fond\ 1.jpg);
+.deco_1 {
+  background-image: url(../photos/accueil/deco_1.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 659px;
   display: flex;
 }
-.fond .bloc {
+.deco_1 .bloc {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,7 +17,7 @@
   /*Media Queries*/
 }
 @media screen and (max-width: 996px) {
-  .fond .bloc {
+  .deco_1 .bloc {
     flex-direction: column;
     justify-content: center;
     padding: 60px;
@@ -182,10 +182,9 @@
   gap: 80px;
 }
 
-/*Section 5 - Contacts*/
-/*Fond Décoratif*/
-.fond__2 {
-  background-image: url(../Assets/accueil/fond\ 1.jpg);
+/*Section 5 - Contact*/
+.deco_bis {
+  background-image: url(../photos/accueil/deco_1.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 659px;
@@ -194,7 +193,6 @@
   align-items: center;
 }
 
-/*Fond Blanc superposé*/
 .white {
   display: flex;
   flex-direction: column;
@@ -204,21 +202,17 @@
   width: 756px;
   height: 424px;
 }
-@media screen and (max-width: 996px) {
-  .white {
-    width: 300px;
-  }
-}
 
-/*Texte Contacts*/
 .black {
   color: var(--black);
   line-height: 2rem;
 }
-.black .top {
+
+.top {
   margin-top: 50px;
 }
-.black .bottom {
+
+.bottom {
   margin-bottom: 50px;
 }
 
@@ -229,8 +223,11 @@
     display: none;
   }
   /*Même principe, les photos de droite, Section 4, disparaissent en responsive*/
-  img[src="Assets/accueil/Photo 4.jpg"],
-  img[src="Assets/accueil/Photo 5.jpg"] {
+  img[src="photos/accueil/Photo 4.jpg"],
+  img[src="photos/accueil/Photo 5.jpg"] {
     display: none;
+  }
+  .white {
+    width: 300px;
   }
 }/*# sourceMappingURL=accueil.css.map */

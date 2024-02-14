@@ -59,16 +59,16 @@
 }
 
 /*Section 2 - Formulaire de contact*/
-.fond__3 {
-  /*Fond décoratif*/
-  background-image: url(../Assets/accueil/fond\ 2.jpg);
+/*Fond décoratif*/
+.deco_2 {
+  background-image: url(../photos/accueil/deco_2.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 1127px;
   margin-bottom: 100px;
 }
 @media screen and (max-width: 996px) {
-  .fond__3 {
+  .deco_2 {
     margin-bottom: 0;
   }
 }
