@@ -73,15 +73,6 @@
   }
 }
 
-/*Formulaire*/
-input:focus {
-  border: 5px solid #02f72b;
-}
-
-textarea:focus {
-  border: 5px solid #02f72b;
-}
-
 /*Section 3 - Tableau*/
 .middle {
   text-align: center;

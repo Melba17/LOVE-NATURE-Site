@@ -316,15 +316,6 @@
   }
 }
 
-/*Formulaire*/
-input:focus {
-  border: 5px solid #02f72b;
-}
-
-textarea:focus {
-  border: 5px solid #02f72b;
-}
-
 /*Section 3 - Tableau*/
 .middle {
   text-align: center;
@@ -462,6 +453,10 @@ td {
   display: flex;
 }
 
+span {
+  text-decoration: underline;
+}
+
 /* Modules */
 nav {
   display: flex;
@@ -586,12 +581,36 @@ input {
   border-radius: 5px;
   border: none;
 }
+input:focus {
+  border: 5px solid #02f72b;
+}
+
+@keyframes headshake {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateX(2%);
+  }
+}
+.email:focus {
+  border: 5px solid #02f72b;
+}
+.email:not(:focus):invalid {
+  background-color: orangered;
+  border: 5px solid orange;
+  color: white;
+  animation: headshake 0.1s cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
 
 textarea {
   padding: 25px;
   border-radius: 5px;
   border: none;
   margin-bottom: 80px;
+}
+textarea:focus {
+  border: 5px solid #02f72b;
 }
 
 /*style général cta*/
