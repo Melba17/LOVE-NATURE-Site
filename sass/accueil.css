@@ -173,10 +173,28 @@
   gap: 50px;
   transition: transform 500ms ease-in-out;
 }
-.team .effet:hover {
-  transform: scale(1.3);
+.team .heartbeat:hover {
+  animation: heartbeat 0.8s 300ms ease-in-out 3;
 }
 
+/* animation flèche*/
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.2);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  35% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*Photos de droite*/
 .team2 {
   display: flex;
