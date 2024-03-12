@@ -49,29 +49,6 @@ input {
     }
 }
 
-$shake-intensity: 2%;
-
-@keyframes headshake {
-  25% {
-    transform: translateX($shake-intensity);
-  }
-  75% {
-    transform: translateX($shake-intensity);
-  }
-}
-.email {
-  &:focus {
-    border: 5px solid #02f72b;
-  }
-  
-    &:not(:focus):invalid {
-    background-color: orangered;
-    border: 5px solid orange;
-    color: white;
-    animation: headshake 0.1s cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
-    } 
-}
-
 textarea {
   padding: 25px;
   border-radius: 5px;
