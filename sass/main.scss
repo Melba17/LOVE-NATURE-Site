@@ -78,6 +78,7 @@ h3 {
 body {
   background-color: var(--background-color);
   max-width: 1440px;
+  box-sizing: border-box;
   font-family: var(--body-font);
   font-weight: var(--body-font-weight);
   font-size: var(--body-font-size);
