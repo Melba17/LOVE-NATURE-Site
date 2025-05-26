@@ -10,7 +10,7 @@
   margin-bottom: 150px;
 
   /*Media Queries*/
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     height: 132px;
     margin-bottom: 100px;
   }
@@ -24,7 +24,7 @@
   justify-content: center;
   margin-bottom: 150px;
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 330px;
     gap: 30px;
     margin-bottom: 100px;
@@ -39,7 +39,7 @@
   justify-content: center;
   margin-bottom: 150px;
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 330px;
     gap: 30px;
     margin-bottom: 100px;

@@ -14,6 +14,8 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Design System */
@@ -29,7 +31,7 @@
   --header-font-weight: 400;
   --header-font-size: 3rem;
   /* Media Queries*/
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     --header-font-size: 2rem;
   }
 
@@ -41,7 +43,7 @@
   --body-highlight-font-weight: 600;
   --body-highlight-font-size: 1.5rem;
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     --body-highlight-font-size: 1.25rem;
   }
 
@@ -54,14 +56,14 @@
   --cta-font-weight: 700;
   --cta-font-size: 1.5rem;
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     --cta-font-size: 1.25rem;
   }
 
   --footer-font-weight: 400;
   --footer-font-size: 1.1rem;
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     --footer-font-size: 0.8rem;
   }
 }
@@ -83,9 +85,9 @@ body {
   font-weight: var(--body-font-weight);
   font-size: var(--body-font-size);
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     --body-font-size: 1rem;
-    max-width: 390px;
+    width: 100%;
   }
 }
 
@@ -94,7 +96,7 @@ h1 {
   font-weight: var(--body-font-weight);
   font-size: var(--h1-font-size);
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     --h1-font-size: 3rem;
   }
 }
@@ -103,7 +105,7 @@ h2 {
   font-family: var(--h2);
   font-weight: var(--body-font-weight);
   font-size: var(--h2-font-size);
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 768px) {
     --h2-font-size: 2rem;
   }
 }
